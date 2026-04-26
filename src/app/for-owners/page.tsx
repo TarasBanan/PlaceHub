@@ -1,12 +1,17 @@
+'use client';
+
 import { ownerPlans } from '@/data/ownerPlans';
-import { ownersContent } from '@/data/siteContent';
+import { ownersContent, localizeText } from '@/data/siteContent';
+import { useLanguage } from '@/components/i18n/LanguageProvider';
 
 export default function ForOwnersPage() {
+  const { locale } = useLanguage();
+
   return (
     <section className="py-10">
       <div className="container-shell space-y-6">
-        <h1 className="text-3xl font-semibold">{ownersContent.title}</h1>
-        <p className="max-w-3xl text-stone-700">{ownersContent.lead}</p>
+        <h1 className="text-3xl font-semibold">{localizeText(ownersContent.title, locale)}</h1>
+        <p className="max-w-3xl text-stone-700">{localizeText(ownersContent.lead, locale)}</p>
 
         <div className="grid gap-4 md:grid-cols-3">
           {ownerPlans.map((plan) => (
@@ -22,15 +27,15 @@ export default function ForOwnersPage() {
 
         <div className="grid gap-4 md:grid-cols-2">
           <article className="rounded-lg border border-parchment bg-white p-4">
-            <h3 className="mb-2 text-lg font-semibold">Как подключиться</h3>
+            <h3 className="mb-2 text-lg font-semibold">{locale === 'ru' ? 'Как подключиться' : 'How to join'}</h3>
             <ul className="list-disc pl-5 text-sm text-stone-700">
-              {ownersContent.steps.map((step) => <li key={step}>{step}</li>)}
+              {ownersContent.steps[locale].map((step) => <li key={step}>{step}</li>)}
             </ul>
           </article>
           <article className="rounded-lg border border-parchment bg-white p-4">
-            <h3 className="mb-2 text-lg font-semibold">Требования к площадке</h3>
+            <h3 className="mb-2 text-lg font-semibold">{locale === 'ru' ? 'Требования к площадке' : 'Venue requirements'}</h3>
             <ul className="list-disc pl-5 text-sm text-stone-700">
-              {ownersContent.requirements.map((item) => <li key={item}>{item}</li>)}
+              {ownersContent.requirements[locale].map((item) => <li key={item}>{item}</li>)}
             </ul>
           </article>
         </div>

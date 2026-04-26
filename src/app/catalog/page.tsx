@@ -4,10 +4,12 @@ import { FilterPanel } from '@/components/catalog/FilterPanel';
 import { SortSelect } from '@/components/catalog/SortSelect';
 import { VenueGrid } from '@/components/catalog/VenueGrid';
 import { useVenueFilters } from '@/hooks/useVenueFilters';
-import { catalogContent } from '@/data/siteContent';
+import { catalogContent, localizeText } from '@/data/siteContent';
+import { useLanguage } from '@/components/i18n/LanguageProvider';
 
 export default function CatalogPage() {
   const items = useVenueFilters();
+  const { locale } = useLanguage();
 
   return (
     <section className="py-10">
@@ -16,10 +18,10 @@ export default function CatalogPage() {
         <div>
           <div className="mb-4 space-y-2">
             <div className="flex items-center justify-between gap-3">
-              <h1 className="text-3xl font-semibold">{catalogContent.title}</h1>
+              <h1 className="text-3xl font-semibold">{localizeText(catalogContent.title, locale)}</h1>
               <SortSelect />
             </div>
-            <p className="text-sm text-stone-600">{catalogContent.subtitle}</p>
+            <p className="text-sm text-stone-600">{localizeText(catalogContent.subtitle, locale)}</p>
           </div>
           <VenueGrid items={items} />
         </div>
