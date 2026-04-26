@@ -57,6 +57,33 @@ export const aboutContent = {
     ru: 'Мы делаем бронирование городских пространств быстрым и прозрачным: от первого фильтра до подтверждённой заявки в одном интерфейсе.',
     en: 'We make city-space booking fast and transparent: from first filter to confirmed request in one interface.'
   },
+
+  values: {
+    ru: [
+      { title: 'Прозрачность', text: 'Показываем реальные фото, условия аренды и понятную структуру заявки.' },
+      { title: 'Скорость', text: 'Среднее время первого ответа по заявке — до 15 минут в рабочие часы.' },
+      { title: 'Поддержка', text: 'Менеджер помогает с подбором площадки и координацией деталей.' }
+    ],
+    en: [
+      { title: 'Transparency', text: 'Real photos, clear rental terms and understandable request flow.' },
+      { title: 'Speed', text: 'Average first response time is up to 15 minutes during business hours.' },
+      { title: 'Support', text: 'A manager helps with venue selection and event coordination.' }
+    ]
+  },
+  timeline: {
+    ru: [
+      '2019 — запуск пилотного каталога в Москве.',
+      '2021 — подключены корпоративные тарифы для владельцев.',
+      '2023 — расширение до 12 городов и добавление подборок по сценариям.',
+      '2026 — двуязычный интерфейс и улучшенный self-service для клиентов.'
+    ],
+    en: [
+      '2019 — pilot catalog launched in Moscow.',
+      '2021 — corporate plans for venue owners introduced.',
+      '2023 — expanded to 12 cities with scenario-based collections.',
+      '2026 — bilingual interface and improved client self-service.'
+    ]
+  },
   stats: {
     ru: [
       '450+ площадок в расширенном каталоге',

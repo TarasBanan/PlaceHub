@@ -35,10 +35,10 @@ export default function HomePage() {
       </section>
       <Calculator />
       <section className="py-10">
-        <div className="container-shell grid gap-4 md:grid-cols-2">
-          <article className="rounded-lg border border-parchment bg-white p-5">
-            <h3 className="mb-3 text-xl font-semibold">{t.home.reviewsTitle}</h3>
-            <ul className="space-y-3">
+        <div className="container-shell grid gap-4 md:grid-cols-[0.85fr,1.15fr]">
+          <article className="rounded-lg border border-parchment bg-white p-4">
+            <h3 className="mb-2 text-lg font-semibold">{t.home.reviewsTitle}</h3>
+            <ul className="space-y-2 text-sm">
               {reviews.map((review) => (
                 <li key={review.name + review.venue} className="text-sm text-stone-700">
                   <strong>{review.name}</strong> ({review.role}) — «{review.text}»
@@ -46,13 +46,16 @@ export default function HomePage() {
               ))}
             </ul>
           </article>
-          <article className="rounded-lg border border-parchment bg-white p-5">
-            <h3 className="mb-3 text-xl font-semibold">{t.home.faqTitle}</h3>
+          <article className="rounded-lg border border-parchment bg-white p-4">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-lg font-semibold">{t.home.faqTitle}</h3>
+              <Link href="/faq" className="text-sm text-mysteria underline">{t.home.openFaqPage}</Link>
+            </div>
             <ul className="space-y-3 text-sm text-stone-700">
               {faq.map((item) => (
                 <li key={item.slug}>
                   <p>{item.question[locale]}</p>
-                  <Link href={`/faq/${item.slug}`} className="text-mysteria underline">{t.home.openAnswer}</Link>
+                  <Link href="/faq" className="text-mysteria underline">{t.home.openAnswer}</Link>
                 </li>
               ))}
             </ul>

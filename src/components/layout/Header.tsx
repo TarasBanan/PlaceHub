@@ -15,6 +15,7 @@ export function Header() {
     { href: '/catalog', label: t.nav.catalog },
     { href: '/collections', label: t.nav.collections },
     { href: '/pricing', label: t.nav.pricing },
+    { href: '/faq', label: t.nav.faq },
     { href: '/for-owners', label: t.nav.owners },
     { href: '/about', label: t.nav.about },
     { href: '/contacts', label: t.nav.contacts }
