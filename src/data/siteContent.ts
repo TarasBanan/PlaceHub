@@ -18,16 +18,16 @@ export const homeContent = {
   },
   howItWorks: {
     ru: [
-      '1. Выберите тип площадки, город и дату мероприятия.',
-      '2. Примените фильтры по вместимости, бюджету и удобствам.',
-      '3. Сравните карточки, изучите правила и доступные опции.',
-      '4. Отправьте заявку и получите подтверждение от менеджера.'
+      { title: 'Бриф за 1 минуту', text: 'Укажите формат события, дату и количество гостей.' },
+      { title: 'Умный отбор', text: 'Система покажет только релевантные варианты по бюджету и задачам.' },
+      { title: 'Проверка деталей', text: 'Сравните условия аренды, правила и комплектацию площадок.' },
+      { title: 'Подтверждение', text: 'Отправьте заявку и получите ответ менеджера с финальными условиями.' }
     ],
     en: [
-      '1. Select venue type, city and event date.',
-      '2. Apply filters by capacity, budget and amenities.',
-      '3. Compare listings, check rules and available options.',
-      '4. Send a request and get manager confirmation.'
+      { title: '1-minute brief', text: 'Set event format, date and guest count.' },
+      { title: 'Smart shortlist', text: 'The system returns relevant options by budget and goals.' },
+      { title: 'Detail check', text: 'Compare rental rules, conditions and included options.' },
+      { title: 'Confirmation', text: 'Submit request and get final terms from a manager.' }
     ]
   }
 };
@@ -57,7 +57,6 @@ export const aboutContent = {
     ru: 'Мы делаем бронирование городских пространств быстрым и прозрачным: от первого фильтра до подтверждённой заявки в одном интерфейсе.',
     en: 'We make city-space booking fast and transparent: from first filter to confirmed request in one interface.'
   },
-
   values: {
     ru: [
       { title: 'Прозрачность', text: 'Показываем реальные фото, условия аренды и понятную структуру заявки.' },
