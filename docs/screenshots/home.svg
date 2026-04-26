@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'>
+  <rect width='100%' height='100%' fill='#f7f7f5'/>
+  <rect x='60' y='80' width='1160' height='80' rx='16' fill='#1b1938'/>
+  <rect x='60' y='190' width='560' height='180' rx='16' fill='#ffffff' stroke='#dcd7d3'/>
+  <rect x='660' y='190' width='560' height='180' rx='16' fill='#ffffff' stroke='#dcd7d3'/>
+  <text x='80' y='130' fill='#fff' font-size='34' font-family='Arial'>PlaceHub Home Preview</text>
+</svg>
