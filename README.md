@@ -205,11 +205,6 @@ pnpm lint
 ### Каталог
 
 ![Каталог — список и фильтры](docs/screenshots/catalog-main.png)
-![Каталог — карточка площадки](docs/screenshots/catalog-card.png)
-
-### Площадка
-
-![Площадка — детальная страница](docs/screenshots/venue-details.png)
 
 ### Подборки
 
