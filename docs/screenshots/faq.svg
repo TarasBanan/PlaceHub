@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720'>
+  <rect width='100%' height='100%' fill='#f7f7f5'/>
+  <rect x='160' y='70' width='960' height='560' rx='16' fill='#ffffff' stroke='#dcd7d3'/>
+  <rect x='190' y='130' width='900' height='56' rx='10' fill='#f2f2f2'/>
+  <rect x='190' y='200' width='900' height='56' rx='10' fill='#f2f2f2'/>
+  <rect x='190' y='270' width='900' height='56' rx='10' fill='#f2f2f2'/>
+  <text x='190' y='110' fill='#292827' font-size='30' font-family='Arial'>FAQ Preview</text>
+</svg>

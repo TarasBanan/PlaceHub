@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import { Hero } from '@/components/sections/home/Hero';
 import { Calculator } from '@/components/sections/home/Calculator';
 import { VenueGrid } from '@/components/catalog/VenueGrid';
@@ -37,7 +36,7 @@ export default function HomePage() {
       </section>
       <Calculator />
       <section className="py-10">
-        <div className="container-shell grid gap-4 md:grid-cols-[1fr,auto]">
+        <div className="container-shell">
           <article className="max-w-2xl rounded-lg border border-parchment bg-white p-4">
             <h3 className="mb-2 text-base font-semibold">{t.home.reviewsTitle}</h3>
             <ul className="space-y-2 text-sm">
@@ -48,11 +47,6 @@ export default function HomePage() {
               ))}
             </ul>
           </article>
-          <div className="flex items-start md:justify-end">
-            <Link href="/faq" className="rounded-sm border border-parchment bg-white px-3 py-2 text-sm font-semibold text-charcoal hover:bg-stone-50">
-              FAQ
-            </Link>
-          </div>
         </div>
       </section>
     </>
